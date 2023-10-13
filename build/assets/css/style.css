@@ -1,0 +1,671 @@
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+    --ripeBerry: #645f6e;
+    --quixoticPlum: #4a4653;
+    --africanViolet: #b284be;
+    --impulsivePurlple: #624977;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    background: var(--ripeBerry);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #4a4653;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 75%;
+    }
+
+    .container {
+        max-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        background: var(--ripeBerry);
+        padding-top: 5%;
+    }
+
+    .components {
+        width: 60%;
+        height: 60%;
+        border-radius: 3rem;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(autofit, min-content);
+        grid-template-rows: repeat(autofit, -webkit-min-content);
+        grid-template-rows: repeat(autofit, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        align-items: center;
+    }
+
+    .components2 {
+        width: 60%;
+        height: 60%;
+        border-radius: 3rem;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(autofit, min-content);
+        grid-template-rows: repeat(autofit, -webkit-min-content);
+        grid-template-rows: repeat(autofit, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        align-items: center;
+        display: none;
+    }
+
+    .wrapper {
+        width: inherit;
+        height: inherit;
+        grid-template-columns: repeat(autofit, min-content);
+        grid-template-rows: repeat(autofit, -webkit-min-content);
+        grid-template-rows: repeat(autofit, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        justify-items: center;
+        margin-bottom: 5%;
+        margin-left: 31.3%;
+    }
+
+    .container3 {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        width: 15rem;
+        height: 9rem;
+        justify-self: center;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+
+    .acidity {
+        grid-column: 2/3;
+        grid-row: 6/6;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .phtitle {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .phmeter {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+    }
+    /*  BUTTONS  */
+    .btn {
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .btn__primary {
+        grid-column: 1/2;
+        grid-row: 3/5;
+        background: var(--impulsivePurlple);
+        color: var(--greyDark);
+    }
+
+        .btn__primary:hover {
+            color: var(--white);
+        }
+
+        .btn__primary:active {
+            box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+        }
+
+    .btn__secondary {
+        grid-column: 2/2;
+        grid-row: 3/5;
+        color: var(--greyDark);
+    }
+
+        .btn__secondary:hover {
+            color: var(--white);
+        }
+
+        .btn__secondary:active {
+            box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyDark), inset -0.2rem -0.2rem 0.5rem var(--greyDark);
+        }
+
+    .btn2 {
+        width: 20rem;
+        height: 6rem;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+    .btn__secondary2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        color: var(--greyDark);
+    }
+
+        .btn__secondary2:hover {
+            color: var(--primary);
+        }
+
+        .btn__secondary2:active {
+            box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyDark), inset -0.2rem -0.2rem 0.5rem var(--greyDark);
+        }
+
+    .btn p {
+        font-size: 1.6rem;
+    }
+    /*  CLOCK  */
+    .clock {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        width: 12rem;
+        height: 12rem;
+        justify-self: center;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+        .clock .hand {
+            position: absolute;
+            transform-origin: bottom;
+            bottom: 6rem;
+            border-radius: 0.2rem;
+            z-index: 200;
+        }
+
+        .clock .hours {
+            width: 0.4rem;
+            height: 3.2rem;
+            background: var(--white);
+        }
+
+        .clock .minutes {
+            width: 0.4rem;
+            height: 4.6rem;
+            background: var(--greyDark);
+        }
+
+        .clock .seconds {
+            width: 0.2rem;
+            height: 5.2rem;
+            background: var(--quixoticPlum);
+        }
+
+        .clock .point {
+            position: absolute;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+            background: var(--quixoticPlum);
+            z-index: 300;
+        }
+
+        .clock .marker {
+            width: 95%;
+            height: 95%;
+            border-radius: 50%;
+            position: relative;
+        }
+
+            .clock .marker::after {
+                content: "";
+                width: 60%;
+                height: 60%;
+                position: absolute;
+                border-radius: 50%;
+                top: 20%;
+                left: 20%;
+                filter: blur(1px);
+            }
+
+        .clock .marker__1,
+        .clock .marker__2,
+        .clock .marker__3,
+        .clock .marker__4 {
+            position: absolute;
+            border-radius: 0.1rem;
+            box-shadow: inset 1px 1px 1px var(--greyLight-2), inset -1px -1px 1px var(--white);
+        }
+
+        .clock .marker__1,
+        .clock .marker__2 {
+            width: 0.2rem;
+            height: 0.6rem;
+            left: 5.6rem;
+        }
+
+        .clock .marker__3,
+        .clock .marker__4 {
+            width: 0.6rem;
+            height: 0.2rem;
+            top: 5.6rem;
+        }
+
+        .clock .marker__1 {
+            top: 2%;
+        }
+
+        .clock .marker__2 {
+            top: 98%;
+            transform: translateY(-0.6rem);
+        }
+
+        .clock .marker__3 {
+            left: 2%;
+        }
+
+        .clock .marker__4 {
+            left: 98%;
+            transform: translateX(-0.6rem);
+        }
+    /*  ICONS  */
+    .icon {
+        grid-column: 3/4;
+        grid-row: 4/5;
+        display: grid;
+        justify-content: center;
+    }
+
+    .icon2 {
+        display: none;
+    }
+
+        .icon2 .icon__add:hover {
+            color: #d11a2a;
+        }
+
+    .icon__add {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--greyDark);
+        transition: all 0.5s ease;
+    }
+
+        .icon__add:active {
+            color: var(--white);
+        }
+
+        .icon__add:hover {
+            color: var(--white);
+        }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        background: var(--ripeBerry);
+        padding-top: 10%;
+    }
+
+    .components {
+        width: 70%;
+        height: 50%;
+        border-radius: 3rem;
+        padding: 4.5rem;
+        display: grid;
+        grid-template-columns: repeat(autofit, min-content);
+        grid-template-rows: repeat(autofit, -webkit-min-content);
+        grid-template-rows: repeat(autofit, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        align-items: center;
+    }
+
+    .components2 {
+        width: 70%;
+        height: 50%;
+        border-radius: 3rem;
+        padding: 4.5rem;
+        display: none;
+        grid-template-columns: repeat(autofit, min-content);
+        grid-template-rows: repeat(autofit, -webkit-min-content);
+        grid-template-rows: repeat(autofit, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        align-items: center;
+    }
+
+    .wrapper {
+        width: inherit;
+        height: inherit;
+        grid-template-columns: repeat(autofit, min-content);
+        grid-template-rows: repeat(autofit, -webkit-min-content);
+        grid-template-rows: repeat(autofit, min-content);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        justify-items: center;
+        margin-bottom: 5%;
+    }
+
+    .container3 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 15rem;
+        height: 9rem;
+        justify-content: center;
+        justify-self: center;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+
+    .acidity {
+        grid-column: 2/3;
+        grid-row: 6/6;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+
+    .phtitle {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .phmeter {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+    }
+    /*  BUTTONS  */
+    .btn {
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .btn2 {
+        width: 20rem;
+        height: 6rem;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 1.5rem;
+        margin-top: 5%;
+        margin-right: 10%;
+    }
+
+    .btn__primary {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background: var(--impulsivePurlple);
+        color: var(--greyDark);
+    }
+
+        .btn__primary:hover {
+            color: var(--white);
+        }
+
+        .btn__primary:active {
+            box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+        }
+
+    .btn__secondary {
+        grid-column: 1/1;
+        grid-row: 4/4;
+        color: var(--greyDark);
+    }
+
+        .btn__secondary:hover {
+            color: var(--white);
+        }
+
+        .btn__secondary:active {
+            box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyDark), inset -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        }
+
+    .btn p {
+        font-size: 1.6rem;
+    }
+    /*  CLOCK  */
+    .clock {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 12rem;
+        height: 12rem;
+        justify-self: center;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+        .clock .hand {
+            position: absolute;
+            transform-origin: bottom;
+            bottom: 6rem;
+            border-radius: 0.2rem;
+            z-index: 200;
+        }
+
+        .clock .hours {
+            width: 0.4rem;
+            height: 3.2rem;
+            background: var(--white);
+        }
+
+        .clock .minutes {
+            width: 0.4rem;
+            height: 4.6rem;
+            background: var(--greyDark);
+        }
+
+        .clock .seconds {
+            width: 0.2rem;
+            height: 5.2rem;
+            background: var(--quixoticPlum);
+        }
+
+        .clock .point {
+            position: absolute;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+            background: var(--quixoticPlum);
+            z-index: 300;
+        }
+
+        .clock .marker {
+            width: 95%;
+            height: 95%;
+            border-radius: 50%;
+            position: relative;
+        }
+
+            .clock .marker::after {
+                content: "";
+                width: 60%;
+                height: 60%;
+                position: absolute;
+                border-radius: 50%;
+                top: 20%;
+                left: 20%;
+                filter: blur(1px);
+            }
+
+        .clock .marker__1,
+        .clock .marker__2,
+        .clock .marker__3,
+        .clock .marker__4 {
+            position: absolute;
+            border-radius: 0.1rem;
+            box-shadow: inset 1px 1px 1px var(--greyLight-2), inset -1px -1px 1px var(--white);
+        }
+
+        .clock .marker__1,
+        .clock .marker__2 {
+            width: 0.2rem;
+            height: 0.6rem;
+            left: 5.6rem;
+        }
+
+        .clock .marker__3,
+        .clock .marker__4 {
+            width: 0.6rem;
+            height: 0.2rem;
+            top: 5.6rem;
+        }
+
+        .clock .marker__1 {
+            top: 2%;
+        }
+
+        .clock .marker__2 {
+            top: 98%;
+            transform: translateY(-0.6rem);
+        }
+
+        .clock .marker__3 {
+            left: 2%;
+        }
+
+        .clock .marker__4 {
+            left: 98%;
+            transform: translateX(-0.6rem);
+        }
+    /*  ICONS  */
+    .icon {
+        grid-column: 3/4;
+        grid-row: 4/5;
+        display: grid;
+        justify-content: center;
+    }
+
+    .icon2 {
+        display: none;
+    }
+
+    .icon__add {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--quixoticPlum), -0.2rem -0.2rem 0.5rem var(--quixoticPlum);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--greyDark);
+        transition: all 0.5s ease;
+    }
+
+        .icon__add:active {
+            color: var(--white);
+        }
+
+        .icon__add:hover {
+            cursor: pointer;
+            color: var(--white);
+        }
+
+    .icon2 .icon__add:hover {
+        cursor: pointer;
+        color: #d11a2a;
+    }
+}
